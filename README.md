@@ -11,6 +11,9 @@ This project tracks the iterative development of a medical imaging AI, moving fr
 | **V3** | Dropout Layers + Improved Architecture | ~85% Accuracy | Better Generalization |
 | **V4 PRO**| **Data Augmentation + Early Stopping + Sniper LR** | **91% Val Accuracy** | **Clinical Grade Logic** |
 
+### V4 PRO Model Performance
+![V4 PRO Confusion Matrix](V4_matrix.png)
+
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10
 * **Framework:** TensorFlow / Keras
@@ -19,10 +22,10 @@ This project tracks the iterative development of a medical imaging AI, moving fr
 
 ## 🔍 Current Engineering Focus: Addressing Data Bias
 While V4 shows high accuracy, internal testing revealed a "Background Bias" where the model relied on image cropping rather than pure anatomy.
+
 **Next Steps:**
 - [ ] Implementing **5-Fold Cross-Validation** to ensure mathematical stability.
 - [ ] Integrating the **BraTS Dataset** for multi-institutional diversity.
 - [ ] Refining the preprocessing pipeline to eliminate background noise.
-
 
 > **Disclaimer:** This project is for educational and research purposes only. It is not intended for clinical use or medical diagnosis.
